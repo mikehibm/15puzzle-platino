@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <id>com.example.platinoslidepuzzle</id>
+    <name>PlatinoSlidePuzzle</name>
+    <version>1.0</version>
+    <publisher>Mike</publisher>
+    <url>http://</url>
+    <description>undefined</description>
+    <copyright>2014 by mike</copyright>
+    <icon>appicon.png</icon>
+    <fullscreen>true</fullscreen>
+    <statusbar-hidden>true</statusbar-hidden>
+    <navbar-hidden>true</navbar-hidden>
+    <analytics>false</analytics>
+    <guid>a2334aef-e866-4436-ab20-7a5f32925c53</guid>
+    <property name="ti.ui.defaultunit" type="string">dp</property>
+    <ios>
+        <plist>
+            <dict>
+                <key>UISupportedInterfaceOrientations~iphone</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                </array>
+                <key>UISupportedInterfaceOrientations~ipad</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                    <string>UIInterfaceOrientationPortraitUpsideDown</string>
+                    <string>UIInterfaceOrientationLandscapeLeft</string>
+                    <string>UIInterfaceOrientationLandscapeRight</string>
+                </array>
+                <key>UIRequiresPersistentWiFi</key>
+                <false/>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+                <key>UIStatusBarHidden</key>
+                <false/>
+                <key>UIStatusBarStyle</key>
+                <string>UIStatusBarStyleDefault</string>
+            </dict>
+        </plist>
+    </ios>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+    	<tool-api-level>19</tool-api-level>
+        <manifest>          
+            <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="19"/>    
+        </manifest>
+    </android>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules>
+        <module platform="android">co.lanica.platino</module>
+        <module platform="iphone">co.lanica.platino</module>
+        <module platform="android">co.lanica.almixer</module>
+        <module platform="iphone">co.lanica.almixer</module>
+        <module platform="commonjs">net.jonbeebe.platino.transition</module>
+    </modules>
+    <deployment-targets>
+        <target device="android">true</target>
+        <target device="blackberry">false</target>
+        <target device="ipad">true</target>
+        <target device="iphone">true</target>
+        <target device="mobileweb">false</target>
+    </deployment-targets>
+    <sdk-version>3.4.0.GA</sdk-version>
+</ti:app>
