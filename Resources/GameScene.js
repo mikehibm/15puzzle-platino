@@ -166,7 +166,7 @@
 	                var num = puzzle.getNumber(i, j);
 	                piece = findPieceByNum(num);
 	                var new_pos = calcPiecePos(i, j);
-	                if (piece.x != new_pos.x || piece.y != new_pos.y){
+					if (Math.abs(piece.x - new_pos.x) > 1 || Math.abs(piece.y - new_pos.y) > 1){
 	                	var transform  = platino.createTransform();
 	                	transform.duration = 280;
 						transform.x = new_pos.x - piece.width/2;
